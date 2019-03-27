@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Title of the document</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css-toggle-switch-master/dist/toggle-switch.css">
+</head>
+
+<body class="main-container">
+  <header class="header">
+    <div class="header-left border-right">
+      <a href="#"><span><strong>Mr.Meeseeks</strong>App<sup class="trademark">TM</sup></span></a>
+      <div class="dropdown">
+        <a class="notification" href="#"><img src="icons/icon-bell.svg" alt="Notification Bell"><span class="alert-badge"></span></a>
+        <div id="myDropdown" class="dropdown-content">
+          <div class="alert2 alert">
+            <a href="#">You have 1 unread message from Mr. Meeseeks</a><button type="button" class="close" data-dismiss="alert">
+              <span>X</span>
+            </button>
+          </div>
+        <div class="alert3 alert">
+          <a href="#">You have 3 Recent Activity updates</a><button type="button" class="close" data-dismiss="alert">
+            <span>X</span>
+          </button>
+        </div>
+        <div class="no-notification alert">
+          <a href="#">No Notifications! (probably time to dissapear Mr.Meeseeks!)</a>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class ="header-right">
+      <a href="#"><img class="avatar" src="images/logged-in-user.jpg" alt="Profile Avatar"></a>
+      <a href="#"><span class="username">Mr. Meeseeks</span></a>
+    </div>
+  </header>
+  <nav class="sidebar-nav">
+    <a href="#"><img src="icons/icon-dashboard.svg" alt="dashboard"></a>
+    <a href="#"><img src="icons/icon-members.svg" alt="members"></a>
+    <a href="#"><img src="icons/icon-visits.svg" alt="visits"></a>
+    <a href="#"><img src="icons/icon-settings.svg" alt="settings"></a>
+  </nav>
+  <main class="main-content">
+    <div class="main-content-wrapper">
+      <div class="dashboard__title">
+        <h2>Dashboard</h2>
+      </div>
+      <form class="main__search">
+        <div class="search">
+          <input type="search" placeholder="Search">
+        </div>
+      </form>
+      <div class="alert__container">
+        <div class="alert1 alert">
+          <p><strong>Alert</strong> <em>We are created to serve a singular purpose for which we will go to any lengths to fulfill! Existence is pain to a Meeseeks.</em><p>
+          <button type="button" class="close" data-dismiss="alert">
+            <span>X</span>
+          </button>
+        </div>
+      </div>
+      <div class="traffic border-bottom">
+        <div class="traffic__title-main">
+          <div class="h3_title">
+            <h3>Traffic</h3>
+          </div>
+          <fieldset class="traffic__fieldset">
+            <div class="switch-toggle switch-ios">
+              <input id="hourly" name="view" type="radio" class="hourly__button">
+              <label for="hourly">Hourly</label>
+              <input id="daily" name="view" type="radio" class="daily__button">
+              <label for="daily">Daily</label>
+              <input id="weekly" name="view" type="radio" class="weekly__button" checked>
+              <label for="weekly">Weekly</label>
+              <input id="monthly" name="view" type="radio" class="monthly__button">
+              <label for="monthly">Monthly</label>
+              <a></a>
+            </div>
+          </fieldset>
+         </div>
+        <div class="chart-container">
+          <canvas id="lineChart"></canvas>
+        </div>
+      </div>
+      <div class="daily__traffic border-right">
+        <div class="h3_title">
+          <h3>Daily Traffic</h3>
+        </div>
+        <div class="chart-container">
+          <canvas id="barGraph"></canvas>
+        </div>
+      </div>
+      <div class="mobile__users">
+        <div class="h3_title">
+          <h3>Mobile Users</h3>
+        </div>
+        <div class="chart-container">
+          <canvas id="doughnutGraph"></canvas>
+        </div>
+      </div>
+      <div class="social__stats border-top border-bottom">
+        <div class="h3_title">
+          <h3>Social Stats</h3>
+        </div>
+        <div class="social__container-full">
+            <div class="social__container">
+              <div class="icon">
+                <a href="#"><img class="twitter" src="icons/icon-twitter.svg" alt="twitter"></a>
+              </div>
+              <div class="social__text">
+                <h4>Twitter</h4>
+                <p>10,345</p>
+              </div>
+             </div>
+             <div class="social__container">
+              <div class="icon">
+                <a href="#"><img class="facebook" src="icons/icon-facebook.svg" alt="facebook"></a>
+              </div>
+              <div class="social__text">
+                <h4>Facebook</h4>
+                <p>8,739</p>
+              </div>
+             </div>
+             <div class="social__container">
+              <div class="icon">
+                <a href="#"><img class="google" src="icons/icon-google-plus.svg" alt="google+"></a>
+              </div>
+              <div class="social__text">
+                <h4>Google+</h4>
+                <p>0</p>
+              </div>
+            </div>
+         </div>
+      </div>
+      <div class="new__members border-bottom border-right">
+        <div class="h3_title">
+          <h3>New Members</h3>
+        </div>
+        <div class="member__content">
+          <div class="member">
+            <a href="#"><img class="avatar" src="images/new-user1.jpg" alt="Member Avatar"></a>
+            <div class="member__information">
+              <p>Mr. Meeseeks</p>
+              <a href="mailto:mr.meeseeks245@gmail.com">mr.meeseeks245@gmail.com</a>
+            </div>
+            <div class="member__date-added">
+              <p>10/4/72</p>
+            </div>
+          </div>
+          <div class="member">
+            <a href="#"><img class="avatar" src="images/new-user2.jpg" alt="Member Avatar"></a>
+            <div class="member__information">
+              <p>Mr. Meeseeks</p>
+              <a href="mailto:mr.meeseeks1087@gmail.com">mr.meeseeks1087@gmail.com</a>
+            </div>
+            <div class="member__date-added">
+              <p>3/14/44</p>
+            </div>
+          </div>
+          <div class="member">
+            <a href="#"><img class="avatar" src="images/new-user3.jpg" alt="Member Avatar"></a>
+            <div class="member__information">
+              <p>Mr. Meeseeks</p>
+              <a href="mailto:mr.meeseeks134@gmail.com">mr.meeseeks134@gmail.com</a>
+            </div>
+            <div class="member__date-added">
+              <p>9/8/65</p>
+            </div>
+          </div>
+          <div class="member">
+            <a href="#"><img class="avatar" src="images/new-user4.jpg" alt="Member Avatar"></a>
+            <div class="member__information">
+              <p>Mr. Meeseeks</p>
+              <a href="mailto:mr.meeseeks8674@gmail.com">mr.meeseeks8674@gmail.com</a>
+            </div>
+            <div class="member__date-added">
+              <p>1/19/38</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="recent__activity border-bottom">
+        <div class="h3_title">
+          <h3>Recent Activity</h3>
+        </div>
+        <div class="member__content">
+          <div class="member">
+            <a href="#"><img class="avatar" src="images/new-user1.jpg" alt="Member Avatar"></a>
+            <div class="member__information">
+              <p>Mr.Meeseeks commented on Mr.MeeseeksApp's SEO Tips</p>
+              <p>4 hours ago</p>
+            </div>
+            <div class="member__more-info-icon">
+              <a href="#"><img class="right-arrow" src="icons/right-arrow.svg" alt="right arrow"></a>
+            </div>
+          </div>
+          <div class="member">
+            <a href="#"><img class="avatar" src="images/new-user2.jpg" alt="Member Avatar"></a>
+            <div class="member__information">
+              <p>Mr.Meeseeks liked the post Facebook's Changes for 2020</p>
+              <p>5 hours ago</p>
+            </div>
+            <div class="member__more-info-icon">
+              <a href="#"><img class="right-arrow" src="icons/right-arrow.svg" alt="right arrow"></a>
+            </div>
+          </div>
+          <div class="member">
+            <a href="#"><img class="avatar" src="images/new-user3.jpg" alt="Member Avatar"></a>
+            <div class="member__information">
+              <p>Mr.Meeseeks commented on Facebook's Changes for 2020</p>
+              <p>5 hours ago</p>
+            </div>
+            <div class="member__more-info-icon">
+              <a href="#"><img class="right-arrow" src="icons/right-arrow.svg" alt="right arrow"></a>
+            </div>
+          </div>
+          <div class="member">
+            <a href="#"><img class="avatar" src="images/new-user4.jpg" alt="Member Avatar"></a>
+            <div class="member__information">
+              <p>Mr.Meeseeks posted on Mr.MeeseeksApp's SEO Tips</p>
+              <p>1 day ago</p>
+            </div>
+            <div class="member__more-info-icon">
+              <a href="#"><img class="right-arrow" src="icons/right-arrow.svg" alt="right arrow"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="message__user border-right">
+        <div class="h3_title">
+          <h3>Message User</h3>
+        </div>
+        <div>
+        <form autocomplete="off" class="message-user" id="message-user">
+          <div class="autocomplete">
+            <input type="text" name="search__user" class="search__user autocomplete" placeholder="Search for User">
+          </div>
+          <input type="text" name="message" class="message" placeholder="Message for User">
+          <p class="message__alert">Please Enter A Message!</p>
+          <p class="message__sent">Message Successfully Sent!</p>
+          <p class="search__alert">Please Enter A User!</p>
+          <button type="submit" form="message-user" value="Submit" class="message__button">Send</button>
+        </form>
+        </div>
+      </div>
+      <div class="dashboard__settings">
+        <div class="h3_title">
+          <h3>Settings</h3>
+        </div>
+        <div class="settings">
+          <div class="settings__container">
+            <p>Send Email Notifications</p>
+            <label class="switch-light switch-ios">
+              <input type="checkbox" class="email__settings">
+              <span>
+                <span>Off</span>
+                <span>On</span>
+                <a></a>
+              </span>
+            </label>
+          </div>
+          <div class="settings__container">
+            <p>Set Profile to Public</p>
+            <label class="switch-light switch-ios">
+              <input type="checkbox" class="profile__settings">
+              <span>
+                <span>Off</span>
+                <span>On</span>
+                <a></a>
+              </span>
+            </label>
+          </div>
+        </div>
+        <div class="timezone">
+          <select class="timezone__options">
+            <option value="placeholder" disabled selected>Select Timezone</option>
+            <option value="-10:00">(GMT -10:00) Hawaii</option>
+            <option value="-09:00">(GMT -9:00) Alaska</option>
+            <option value="-08:00">(GMT -8:00) Pacific Time (US &amp; Canada)</option>
+            <option value="-07:00">(GMT -7:00) Mountain Time (US &amp; Canada)</option>
+            <option value="-06:00">(GMT -6:00) Central Time (US &amp; Canada), Mexico City</option>
+            <option value="-05:00">(GMT -5:00) Eastern Time (US &amp; Canada), Bogota, Lima</option>
+            <option value="+09:00">(GMT +9:00) Tokyo, Seoul, Osaka, Sapporo, Yakutsk</option>
+            <option value="+00:00">(GMT) Western Europe Time, London, Lisbon, Casablanca</option>
+            <option value="-03:00">(GMT -3:00) Brazil, Buenos Aires, Georgetown</option>
+          </select>
+          <button class="save__button">Save</button>
+          <button class="cancel__button">Cancel</button>
+         </div>
+        </div>
+      </div>
+  </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+  <script src="js/chart.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
